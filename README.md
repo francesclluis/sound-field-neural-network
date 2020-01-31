@@ -31,7 +31,7 @@ Note that the provided pre-trained model predicts the 2D sound field with 1/12th
 4. `conda activate sfun`
 5. `./download_sample_dataset.sh` (~211MB)  or `./download_full_dataset.sh` (~62GB)
 
-The project has been tested with Keras 2.2.4, CUDA 8.0, CUDNN 7.1.3 on Ubuntu 18.04 LTS. We reuse code from [MathiasGruber/PConv-Keras](https://github.com/MathiasGruber/PConv-Keras)
+The project has been tested with Keras 2.2.4, CUDA 8.0, CUDNN 7.1.3 on Ubuntu 18.04 LTS. We reuse code from [MathiasGruber/PConv-Keras](https://github.com/MathiasGruber/PConv-Keras).
 
 ## Usage
 
