@@ -1,0 +1,30 @@
+{
+    "dataset": {
+        "path": "datasets/",
+        "factor": 4,
+        "xSamples": 32,
+        "ySamples": 32
+    },
+    "training": {
+        "batch_size": 4,
+        "num_epochs": 500,
+        "num_steps_val": 2000,
+        "num_steps_train": 5000,
+        "session_id": 1,
+        "lr": 0.0001,
+        "loss": {
+            "valid_weight": 1,
+            "hole_weight": 12
+        }
+    },
+    "evaluation": {
+        "min_mics": 5,
+        "max_mics": 65,
+        "step_mics": 5,
+        "num_comb": 1000
+    },
+    "visualization": {
+        "num_mics": 6,
+        "source": 0
+    }
+}
