@@ -137,7 +137,7 @@ for ModeIndex = 1 : size(ModalNumbers,1)
         len = 0;
     else
         len = length(eps);
-        eps = len*2;
+        eps = 2^len;
     end
     
     % Eigenfunctions of the room evaluated at the microphone and source
@@ -146,11 +146,11 @@ for ModeIndex = 1 : size(ModalNumbers,1)
     Psi_r(:,ModeIndex) = sqrt(eps/V)*...
         cos(ModalNumbers(ModeIndex,1)*pi*x/Setup.Room.Dim(1)) .*...
         cos(ModalNumbers(ModeIndex,2)*pi*y/Setup.Room.Dim(2)) .*...
-        cos(ModalNumbers(ModeIndex,3)*pi*y/Setup.Room.Dim(3));
+        cos(ModalNumbers(ModeIndex,3)*pi*z/Setup.Room.Dim(3));
     Psi_s(ModeIndex,:) = sqrt(eps/V)*...
         cos(ModalNumbers(ModeIndex,1)*pi*xS/Setup.Room.Dim(1)) .*...
-        cos(ModalNumbers(ModeIndex,2)*pi*xS/Setup.Room.Dim(2)) .*...
-        cos(ModalNumbers(ModeIndex,3)*pi*yS/Setup.Room.Dim(3)); 
+        cos(ModalNumbers(ModeIndex,2)*pi*yS/Setup.Room.Dim(2)) .*...
+        cos(ModalNumbers(ModeIndex,3)*pi*zS/Setup.Room.Dim(3)); 
     
     % Apply loss relative to the mode-type
     switch len

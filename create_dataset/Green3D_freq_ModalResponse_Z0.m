@@ -125,7 +125,7 @@ for ModeIndex = 1 : size(ModalNumbers,1)
         len = 0;
     else
         len = length(eps);
-        eps = len*2;
+        eps = 2^len;
     end
     % Eigenfunctions of the room evaluated at the microphone and source
     % positions. Note that the eigenfunctions have been scaled to be
