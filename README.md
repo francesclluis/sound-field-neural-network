@@ -31,6 +31,8 @@ Note that the provided pre-trained model predicts the 2D sound field with 1/12th
 4. `conda activate sfun`
 5. `./download_sample_dataset.sh` (~211MB)  or `./download_full_dataset.sh` (~62GB)
 
+Links to download the dataset are no longer valid. Please download the sample dataset at the google drive link [here](https://drive.google.com/file/d/1Q7IHpD72EWjkiU8NWH-sMIRvFo3NmaUX/view?usp=sharing). Then extract the `datasets.zip` file in this the repository. 
+
 Check [this issue](https://github.com/francesclluis/sound-field-neural-network/issues/1) if you get errors when running `conda env create -f environment.yml`.
 
 The project has been tested with Keras 2.2.4, CUDA 8.0, CUDNN 7.1.3 on Ubuntu 18.04 LTS. We reuse code from [MathiasGruber/PConv-Keras](https://github.com/MathiasGruber/PConv-Keras).
